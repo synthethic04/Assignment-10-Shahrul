@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@700&family=Playball&display=swap");
+
+/* font-family: 'Catamaran', sans-serif;
+font-family: 'Playball', cursive; */
+:root {
+  --main-bg-color: #f4f4f4;
+  --main-txt-color: #333333;
+  --secondary-bg-color: gray;
+  --secondary-txt-color: green;
+  --header-txt-color: #ffffff;
+  --para-txt-color: rgb(124, 111, 111);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Catamaran", sans-serif;
+  background-color: var(--main-bg-color);
+  color: var(--main-txt-color);
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* HEADER  */
+#header {
+  background: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5)),
+    url(backgroundheader-a10.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  min-height: 95vh;
+}
+
+#header ul {
+  margin-left: auto;
+}
+
+#header ul li {
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+
+#header ul li a {
+  color: var(--header-txt-color);
+}
+
+#header ul li .active {
+  color: var(--secondary-txt-color);
+}
+
+#header .navbar {
+  background: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5));
+}
+
+#header .navbar-brand {
+  font-family: "Playball", cursive;
+}
+
+#header .navbar-brand span {
+  font-size: 1rem;
+}
+
+#header .item {
+  text-align: center;
+  margin-top: 10%;
+  color: var(--header-txt-color);
+}
+
+#header .item .fab {
+  margin: 10px;
+}
+
+/* ABOUT ME  */
+#about-me {
+  background-color: var(--main-bg-color);
+  padding: 6em 0px;
+}
+
+#about-me h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-txt-color);
+}
+
+#about-me h1 span {
+  color: var(--secondary-txt-color);
+}
+
+#about-me .underline {
+  width: 30%;
+  background-color: var(--secondary-txt-color);
+  height: 2px;
+  margin: 0 auto;
+}
+
+#about-me .underline p {
+  width: 33.333333%;
+  background-color: var(--secondary-txt-color);
+  height: 4px;
+  vertical-align: top;
+  margin: 0 auto;
+}
+
+#about-me .row-1 {
+  padding: 3em;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#about-me .row-1 .item-1 img {
+  border: 2px solid var(--secondary-txt-color);
+  border-radius: 0.8em;
+  height: 500px;
+}
+
+#about-me .row-1 .item-2 {
+  padding: 1em;
+  border-radius: 0.3em;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+#about-me .row-1 .item-2 p {
+  color: var(--para-txt-color);
+}
+
+#about-me .row-1 .item-2 a {
+  background-color: var(--secondary-txt-color);
+  color: var(--header-txt-color);
+}
