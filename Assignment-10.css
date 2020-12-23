@@ -3,12 +3,13 @@
 /* font-family: 'Catamaran', sans-serif;
 font-family: 'Playball', cursive; */
 :root {
-  --main-bg-color: #f4f4f4;
-  --main-txt-color: #333333;
-  --secondary-bg-color: gray;
+  --main-txt-color: #000000;
+  --third-txt-color: #333333;
+  --secondary-bg-color: rgb(237, 223, 223);
   --secondary-txt-color: green;
   --header-txt-color: #ffffff;
   --para-txt-color: rgb(124, 111, 111);
+  --gray-color: gray;
 }
 
 * {
@@ -19,7 +20,6 @@ font-family: 'Playball', cursive; */
 
 body {
   font-family: "Catamaran", sans-serif;
-  background-color: var(--main-bg-color);
   color: var(--main-txt-color);
 }
 
@@ -51,7 +51,6 @@ img {
 }
 
 #header ul li {
-  margin-left: 20px;
   text-transform: uppercase;
 }
 
@@ -59,12 +58,14 @@ img {
   color: var(--header-txt-color);
 }
 
-#header ul li .active {
-  color: var(--secondary-txt-color);
+#header ul li a:hover {
+  background-color: var(--secondary-txt-color);
 }
 
 #header .navbar {
   background: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5));
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 #header .navbar-brand {
@@ -81,34 +82,42 @@ img {
   color: var(--header-txt-color);
 }
 
+#header .nav-link {
+  padding: 1.5rem 1rem;
+}
+
 #header .item .fab {
   margin: 10px;
 }
 
 /* ABOUT ME  */
-#about-me {
-  background-color: var(--main-bg-color);
+#about-me,
+#my-service {
   padding: 6em 0px;
 }
 
-#about-me h1 {
+#about-me h1,
+#my-service h1 {
   text-align: center;
   text-transform: uppercase;
   color: var(--main-txt-color);
 }
 
-#about-me h1 span {
+#about-me h1 span,
+#my-service h1 span {
   color: var(--secondary-txt-color);
 }
 
-#about-me .underline {
+#about-me .underline,
+#my-service .underline {
   width: 30%;
   background-color: var(--secondary-txt-color);
   height: 2px;
   margin: 0 auto;
 }
 
-#about-me .underline p {
+#about-me .underline p,
+#my-service .underline p {
   width: 33.333333%;
   background-color: var(--secondary-txt-color);
   height: 4px;
@@ -116,23 +125,22 @@ img {
   margin: 0 auto;
 }
 
-#about-me .row-1 {
-  padding: 3em;
-  display: grid;
-  grid-gap: 2em;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+#about-me .row-1 .item-1 {
+  padding: 2em;
 }
 
 #about-me .row-1 .item-1 img {
+  float: left;
   border: 2px solid var(--secondary-txt-color);
   border-radius: 0.8em;
-  height: 500px;
+  height: 450px;
+  max-width: 400px;
+  margin: 30px;
 }
 
 #about-me .row-1 .item-2 {
-  padding: 1em;
-  border-radius: 0.3em;
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  margin-left: 30px;
+  padding: 0px 2em;
 }
 
 #about-me .row-1 .item-2 p {
@@ -140,6 +148,117 @@ img {
 }
 
 #about-me .row-1 .item-2 a {
+  background-color: var(--main-bg-color);
+  color: var(--third-txt-color);
+  border: 1px solid var(--main-txt-color);
+  padding: 5px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-right: 20px;
+  display: flexbox;
+  flex-wrap: wrap;
+}
+
+#about-me .row-1 .item-2 a:hover {
+  background-color: var(--secondary-txt-color);
+  border: none;
+  color: var(--main-bg-color);
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#about-me .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#about-me .list a {
+  margin: 20px 3px 0px 0px;
+  padding: 10px 15px;
+  background-color: var(--secondary-bg-color);
+  text-decoration: none;
+  color: var(--main-txt-color);
+  font-size: 1.2em;
+}
+
+#about-me .list a:hover {
   background-color: var(--secondary-txt-color);
   color: var(--header-txt-color);
+}
+
+#about-me .list .fas {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+/* MY SERVICE */
+#my-service {
+  background: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5)),
+    url(my-service\ background-a10.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+#my-service h1 {
+  color: var(--header-txt-color);
+}
+
+#my-service .header-text {
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+  color: var(--header-txt-color);
+}
+
+#my-service .list {
+  padding: 3em;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+#my-service .list .fas {
+  background-color: var(--secondary-txt-color);
+  color: var(--header-txt-color);
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 30%;
+  font-size: 1.4rem;
+}
+
+#my-service .list .item {
+  background-color: var(--header-txt-color);
+  padding: 2em;
+  text-align: center;
+  border-radius: 5%;
+}
+
+#my-service .list .item h4 {
+  padding-bottom: 10px;
+}
+
+#my-service .list .item p {
+  padding-bottom: 15px;
+  color: var(--para-txt-color);
+}
+
+#my-service .list a {
+  text-decoration: none;
+  background-color: var(--secondary-txt-color);
+  color: var(--header-txt-color);
+  padding: 5px 20px;
+  border-radius: 7%;
+  text-transform: capitalize;
 }
