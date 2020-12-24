@@ -454,6 +454,10 @@ img {
   font-size: 0.5em;
 }
 
+#plan .items .price p {
+  font-size: 0.8em;
+}
+
 #plan .items .box .list {
   padding-top: 5em;
   text-align: center;
