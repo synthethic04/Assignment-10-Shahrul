@@ -94,14 +94,16 @@ img {
 #about-me,
 #my-service,
 #my-team,
-#folio {
+#folio,
+#plan {
   padding: 6em 0px;
 }
 
 #about-me h1,
 #my-service h1,
 #my-team h1,
-#folio h1 {
+#folio h1,
+#plan h1 {
   text-align: center;
   text-transform: uppercase;
   color: var(--main-txt-color);
@@ -110,14 +112,16 @@ img {
 #about-me h1 span,
 #my-service h1 span,
 #my-team h1 span,
-#folio h1 span {
+#folio h1 span,
+#plan h1 span {
   color: var(--secondary-txt-color);
 }
 
 #about-me .underline,
 #my-service .underline,
 #my-team .underline,
-#folio .underline {
+#folio .underline,
+#plan .underline {
   width: 30%;
   background-color: var(--secondary-txt-color);
   height: 4px;
@@ -127,7 +131,8 @@ img {
 #about-me .underline p,
 #my-service .underline p,
 #my-team .underline p,
-#folio .underline p {
+#folio .underline p,
+#plan .underline p {
   width: 33.333333%;
   background-color: var(--secondary-txt-color);
   height: 6px;
@@ -249,8 +254,9 @@ img {
   display: block;
   width: fit-content;
   margin: 0 auto;
-  padding: 20px;
-  border-radius: 30%;
+  padding: 13px 20px;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
   font-size: 1.4rem;
 }
 
@@ -258,7 +264,10 @@ img {
   background-color: var(--header-txt-color);
   padding: 2em;
   text-align: center;
-  border-radius: 5%;
+  border-bottom-right-radius: 7%;
+  border-bottom-left-radius: 2%;
+  border-top-right-radius: 2%;
+  border-top-left-radius: 2%;
 }
 
 #my-service .list .item h4 {
@@ -280,7 +289,8 @@ img {
 }
 
 /* MY TEAM  */
-#my-team .header-text {
+#my-team .header-text,
+#plan .header-text {
   max-width: 50%;
   margin: 0 auto;
   text-align: center;
@@ -327,7 +337,7 @@ img {
 #my-team .box .list {
   background-color: var(--secondary-bg-color);
   text-align: center;
-  border-radius: 4%;
+  border-bottom-right-radius: 6%;
 }
 
 #my-team .box .list h3 {
@@ -382,4 +392,80 @@ img {
   display: grid;
   grid-gap: 2em;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* PRICING PLAN  */
+#plan .items {
+  padding: 3em;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+#plan .items .box {
+  border-radius: 3%;
+  padding-bottom: 2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#plan .items .upper-box {
+  text-align: center;
+  background-color: var(--gray-color);
+  position: relative;
+}
+
+#plan .items .upper-box-2 {
+  text-align: center;
+  background-color: var(--secondary-txt-color);
+  position: relative;
+}
+
+#plan .items .upper-box > h2 {
+  padding-bottom: 3em;
+  padding-top: 1em;
+  color: var(--main-txt-color);
+  text-transform: uppercase;
+}
+
+#plan .items .upper-box-2 > h2 {
+  padding-bottom: 3em;
+  padding-top: 1em;
+  color: var(--header-txt-color);
+  text-transform: uppercase;
+}
+
+#plan .items .price {
+  position: absolute;
+  bottom: -30%;
+  left: 33.333333333333%;
+  right: 33.33333333333%;
+  border: 5px solid var(--header-txt-color);
+  border-radius: 50%;
+  background-color: var(--secondary-txt-color);
+  padding: 10px 25px;
+  color: var(--header-txt-color);
+}
+
+#plan .items .price h2 {
+  margin-bottom: 0;
+}
+
+#plan .items .price span {
+  font-size: 0.5em;
+}
+
+#plan .items .box .list {
+  padding-top: 5em;
+  text-align: center;
+  color: var(--para-txt-color);
+  padding-bottom: 0.5em;
+}
+
+#plan .items .box a {
+  text-decoration: none;
+  color: var(--header-txt-color);
+  padding: 5px 15px;
+  background-color: var(--secondary-txt-color);
+  text-transform: capitalize;
+  border-radius: 5%;
 }
