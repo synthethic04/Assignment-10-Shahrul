@@ -95,7 +95,13 @@ img {
 #my-service,
 #my-team,
 #folio,
-#plan {
+#plan,
+#work,
+#blog,
+#client,
+#my-client,
+#story,
+#talk {
   padding: 6em 0px;
 }
 
@@ -103,7 +109,13 @@ img {
 #my-service h1,
 #my-team h1,
 #folio h1,
-#plan h1 {
+#plan h1,
+#work h1,
+#blog h1,
+#client h1,
+#my-client h1,
+#story h1,
+#talk h1 {
   text-align: center;
   text-transform: uppercase;
   color: var(--main-txt-color);
@@ -113,7 +125,13 @@ img {
 #my-service h1 span,
 #my-team h1 span,
 #folio h1 span,
-#plan h1 span {
+#plan h1 span,
+#work h1 span,
+#blog h1 span,
+#client h1 span,
+#my-client h1 span,
+#story h1 span,
+#talk h1 span {
   color: var(--secondary-txt-color);
 }
 
@@ -121,8 +139,14 @@ img {
 #my-service .underline,
 #my-team .underline,
 #folio .underline,
-#plan .underline {
-  width: 30%;
+#plan .underline,
+#work .underline,
+#blog .underline,
+#client .underline,
+#my-client .underline,
+#story .underline,
+#talk .underline {
+  width: calc(30% + 200px);
   background-color: var(--secondary-txt-color);
   height: 4px;
   margin: 0 auto;
@@ -132,16 +156,18 @@ img {
 #my-service .underline p,
 #my-team .underline p,
 #folio .underline p,
-#plan .underline p {
+#plan .underline p,
+#work .underline p,
+#blog .underline p,
+#client .underline p,
+#my-client .underline p,
+#story .underline p,
+#talk .underline p {
   width: 33.333333%;
   background-color: var(--secondary-txt-color);
   height: 6px;
   margin: 0 auto;
 }
-
-/* #about-me .row-1 {
-  padding: 2em;
-} */
 
 #about-me .row-1 img {
   float: left;
@@ -218,7 +244,7 @@ img {
 
 /* MY SERVICE */
 #my-service {
-  background: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5)),
+  background: linear-gradient(hsla(0, 0%, 0%, 0.8), hsla(0, 0%, 0%, 0.8)),
     url(my-service\ background-a10.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -228,13 +254,18 @@ img {
 }
 
 #my-service h1,
-#folio h1 {
+#folio h1,
+#work h1,
+#client h1,
+#story h1 {
   color: var(--header-txt-color);
 }
 
 #my-service .header-text,
-#folio .header-text {
-  max-width: 50%;
+#folio .header-text,
+#work .header-text,
+#client .header-text {
+  max-width: calc(30% + 250px);
   margin: 0 auto;
   text-align: center;
   margin-top: 50px;
@@ -290,8 +321,10 @@ img {
 
 /* MY TEAM  */
 #my-team .header-text,
-#plan .header-text {
-  max-width: 50%;
+#plan .header-text,
+#blog .header-text,
+#talk .header-text {
+  max-width: calc(30% + 250px);
   margin: 0 auto;
   text-align: center;
   margin-top: 50px;
@@ -354,7 +387,7 @@ img {
 
 /* PORTFOLIO GALLERY  */
 #folio {
-  background: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5)),
+  background: linear-gradient(hsla(0, 0%, 0%, 0.8), hsla(0, 0%, 0%, 0.8)),
     url(folio-background.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -472,4 +505,340 @@ img {
   background-color: var(--secondary-txt-color);
   text-transform: capitalize;
   border-radius: 5%;
+}
+
+/* LET'S WORK TOGETHER  */
+#work {
+  background: linear-gradient(hsla(0, 0%, 0%, 0.8), hsla(0, 0%, 0%, 0.8)),
+    url(work-background-a10.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+}
+
+#work h1 {
+  text-transform: capitalize;
+}
+
+#work .header-text a {
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 5px 15px;
+  color: var(--header-txt-color);
+  border: 2px solid #ffffff;
+  border-radius: 5%;
+}
+
+#work .header-text a:hover {
+  background-color: var(--secondary-txt-color);
+  border: none;
+  border-radius: 5%;
+}
+
+/* BLOG POST  */
+#blog .list {
+  padding: 3em;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 2.5em;
+}
+
+#blog .list .item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-bottom-left-radius: 2%;
+  border-bottom-right-radius: 5%;
+}
+
+#blog .list .item h5 {
+  padding-top: 1em;
+  padding-left: 10px;
+  color: var(--third-txt-color);
+}
+
+#blog .list .item p {
+  padding-left: 10px;
+  color: var(--para-txt-color);
+}
+
+#blog .list .item footer {
+  padding: 10px;
+  background-color: var(--secondary-bg-color);
+}
+
+#blog .list .item footer span {
+  margin-right: 10px;
+}
+
+#blog .list .item footer span i {
+  padding-right: 5px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 45px;
+  height: 45px;
+  background-color: var(--secondary-txt-color);
+  border-radius: 50%;
+  opacity: 1;
+  margin-top: 2em;
+}
+
+.carousel-control-prev {
+  left: calc(50% - 80px);
+}
+
+.carousel-control-next {
+  right: calc(50% - 80px);
+}
+
+/* WHAT CLIENT SAY  */
+#client {
+  background: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5)),
+    url(client-background-a10.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+#client .picture {
+  text-align: center;
+}
+
+#client img {
+  width: 110px;
+  height: 110px;
+  border: 3px solid var(--secondary-txt-color);
+  border-radius: 50%;
+  background-color: #000000;
+  margin: 3em 0px 1em 0px;
+}
+
+#client .icon {
+  max-width: calc(30% + 250px);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#client .icon .fas {
+  font-size: 1.5em;
+  color: var(--secondary-txt-color);
+}
+
+#client .header-text {
+  margin-top: 1em;
+}
+
+#client .header-text h3 {
+  text-transform: uppercase;
+}
+
+#client .header-text p:last-child {
+  text-transform: uppercase;
+}
+
+/* MY CLIENTS  */
+#my-client .subject {
+  padding: 3em;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  margin-top: 2.5em;
+}
+
+#my-client .subject a:hover {
+  border: 5px solid var(--secondary-txt-color);
+  border-radius: 5%;
+}
+
+/* SUCCESS STORY  */
+#story {
+  background: linear-gradient(hsla(0, 0%, 0%, 0.8), hsla(0, 0%, 0%, 0.8)),
+    url(story-background-a10.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  min-height: 30vh;
+}
+
+#story .list {
+  /* padding: 3em; */
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 3.5em;
+}
+
+#story .list .item {
+  text-align: center;
+  color: #ffffff;
+}
+
+#story .list .item .fas {
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  padding: 0.5em;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+#story .list .item h1 {
+  padding: 0.3em 0px;
+}
+#story .list .item p {
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+/* WANNA TALK  */
+#talk .list {
+  padding: 3em;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 2.5em;
+}
+
+#talk .list p {
+  font-size: 2em;
+  margin-bottom: 0px;
+  text-transform: capitalize;
+}
+
+#talk .list .underline {
+  height: 2px;
+  color: var(--secondary-txt-color);
+  width: 100%;
+}
+
+#talk .list .write-me .box {
+  width: 100%;
+  margin: 30px 0px;
+  padding: 10px 20px;
+  background-color: rgb(228, 218, 218);
+  border-radius: 2%;
+  border-bottom-right-radius: 4%;
+}
+
+#talk input[type="text"],
+#talk input[type="email"],
+#talk input[type="tel"],
+#talk textarea,
+#talk input[list="services"] {
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 13px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+#talk input[type="text"]:focus,
+#talk input[type="email"]:focus,
+#talk input[type="tel"]:focus,
+#talk textarea:focus,
+#talk input[list="services"]:focus {
+  border-color: var(--secondary-txt-color);
+  box-shadow: 0 0 8px 0 var(--secondary-txt-color);
+}
+
+#talk .inputWithIcon input[type="text"],
+#talk .inputWithIcon input[type="email"],
+#talk .inputWithIcon input[type="tel"],
+#talk .inputWithIcon textarea,
+#talk .inputWithIcon input[list="services"] {
+  padding-left: 40px;
+}
+
+#talk .inputWithIcon {
+  position: relative;
+}
+
+#talk .inputWithIcon i {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  transition: 0.3s;
+}
+
+#talk .inputWithIcon input[type="text"]:focus + i,
+#talk .inputWithIcon input[type="email"]:focus + i,
+#talk .inputWithIcon input[type="tel"]:focus + i,
+#talk .inputWithIcon textarea:focus + i,
+#talk .inputWithIcon input[list="services"]:focus + i {
+  color: var(--secondary-txt-color);
+}
+
+#talk .inputWithIcon.inputIconBg i {
+  background-color: #aaa;
+  color: #fff;
+  padding: 14px 11px;
+  margin: 5px 1px;
+  border-radius: 4px 0 0 4px;
+}
+
+#talk .inputWithIcon.inputIconBg.comment i {
+  background-color: #aaa;
+  color: #fff;
+  padding: 38px 11px;
+  margin: 4px 1px;
+  border-radius: 4px 0 0 4px;
+}
+
+#talk .inputWithIcon.inputIconBg input[type="text"]:focus + i,
+#talk .inputWithIcon.inputIconBg input[type="email"]:focus + i,
+#talk .inputWithIcon.inputIconBg input[type="tel"]:focus + i,
+#talk .inputWithIcon.inputIconBg textarea:focus + i {
+  color: #fff;
+  background-color: var(--secondary-txt-color);
+}
+
+input[type="submit"] {
+  padding: 5px 50px;
+  background-color: #aaa;
+  color: var(--header-txt-color);
+  border: none;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--secondary-txt-color);
+}
+
+#talk .list .box .field {
+  float: right;
+  font-size: 0.8em;
+  color: rgb(255, 0, 0);
+}
+
+#talk .grid {
+  padding: 3em;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: -1.5em;
+}
+
+#talk .grid .item {
+  text-align: center;
+  padding: 1.5em 0;
+  border-radius: 5px;
+  border-bottom-right-radius: 15px;
+  background-color: var(--secondary-bg-color);
+}
+
+#talk .grid .item .fas {
+  font-size: 1.7em;
+  border: 2px solid var(--secondary-txt-color);
+  border-radius: 50%;
+  padding: 15px;
+  color: var(--secondary-txt-color);
+  margin: 10px 0 17px 0;
 }
