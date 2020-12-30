@@ -697,7 +697,6 @@ img {
 
 /* WANNA TALK  */
 #talk .list {
-  padding: 3em;
   display: grid;
   grid-gap: 2em;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -806,6 +805,10 @@ input[type="submit"] {
   color: var(--header-txt-color);
   border: none;
   border-radius: 5px;
+}
+
+.second input[type="submit"] {
+  padding: 5px 30px;
 }
 
 input[type="submit"]:hover {
